@@ -2,99 +2,123 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-  
-  section {
-    border: 1px solid;
+}
+
+body{
+    background: rgb(2,0,36);
+    background: linear-gradient(0deg, rgba(2,0,36,1) 5%, rgba(86,3,180,1) 100%);
+}
+
+main{
+    border: 1px solid black;
     border-radius: 10px;
     padding: 20px;
-  
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 60%;
-  
+    
     margin: auto;
-  
-    background-color: #d9afd9;
-    background-image: linear-gradient(0deg, #d9afd9 0%, #97d9e1 100%);
+    color: white;
+    background: rgb(86,3,180);
+    background: linear-gradient(0deg, rgba(86,3,180,1) 30%, rgba(2,0,36,0.5) 100%);
     box-shadow: -1px 5px 5px 0px rgba(0, 0, 0, 0.41);
-  }
+}
   
-  form {
+section {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    
+    margin: auto;
+    color: white;
+    background: rgb(86,3,180);
+    background: linear-gradient(180deg, rgba(86,3,180,0.2) 30%, rgba(2,0,36,0.5) 100%);
+    box-shadow: -1px 5px 5px 0px rgba(0, 0, 0, 0.41);
+}
+  
+form {
     display: flex;
     flex-direction: column;
     gap: 20px;
     padding: 20px;
-  }
+}
   
-  form fieldset {
+form fieldset {
     display: flex;
     flex-direction: column;
     gap: 10px;
-  
+    
     padding: 10px;
-  }
+}
   
-  .dados-pessoais div {
+.dados-pessoais div {
     display: flex;
     flex-direction: column;
     gap: 5px;
-  }
+}
   
-  .dados-pessoais div input {
+.dados-pessoais div input {
     border-radius: 5px;
-    color: red;
+    color: rgb(0, 0, 0);
     padding: 5px;
-  }
+}
   
-  .dados-pessoais div input::placeholder {
-    color: blue;
-  }
+.dados-pessoais div input::placeholder {
+    color: rgb(110, 108, 108);
+}
   
-  input[type="text"] {
-    border: 1px solid yellow;
-  }
+input[type="text"] {
+    border: 1px solid rgb(0, 0, 0);
+}
   
-  input[type="text"]:focus {
-    outline: 3px solid orange;
+input[type="text"]:focus {
+    outline: 3px solid rgb(0, 0, 0);
     border: none;
-  }
+}
   
-  .dados-profissionais .mod-trabalho,
-  .mensagem,
-  .experiencia {
+.dados-profissionais .mod-trabalho,.mensagem, .experiencia {
     display: flex;
     flex-direction: column;
     gap: 5px;
-  }
+}
   
-  .form-botoes {
+.form-botoes {
     display: flex;
     gap: 20px;
     justify-content: center;
-  }
+}
   
-  .form-botoes input {
+.form-botoes input {
     border: none;
     width: 70px;
     height: 30px;
-  }
+}
   
-  .form-botoes input[type="reset"] {
-    border: 3px solid red;
+.form-botoes input[type="reset"] {
     background-color: transparent;
-    color: red;
-    font-weight: bold;
-  }
-  
-  .form-botoes input[type="submit"] {
-    background-color: red;
+    border: 3px solid rgb(144, 43, 43);
     color: white;
     font-weight: bold;
-  }
+    border-radius: 3px;
+}
   
-  .form-botoes input[type="submit"]:hover {
-    background-color: rgb(118, 0, 0);
-  }
+.form-botoes input[type="submit"] {
+    background-color: transparent;
+    border: 3px solid rgb(144, 43, 43);
+    color: white;
+    font-weight: bold;
+    border-radius: 3px;
+}
+  
+.form-botoes input[type="submit"]:hover {
+    background-color: rgb(144, 43, 43);
+}
